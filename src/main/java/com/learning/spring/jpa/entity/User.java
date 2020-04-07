@@ -16,12 +16,9 @@ public class User {
 	private String role;
 
 	public User() {
-		super();
 	}
 
-	public User(long id, String name, String role) {
-		super();
-		this.id = id;
+	public User(String name, String role) {
 		this.name = name;
 		this.role = role;
 	}
