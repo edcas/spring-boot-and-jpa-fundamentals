@@ -1,11 +1,10 @@
-package com.spring.webservices;
+package com.spring.webservices.helloworld;
 
 public class HelloWorldBean {
 	
 	private String message;
 	
 	public HelloWorldBean(String message) {
-		super();
 		this.message = message;
 	}
 
