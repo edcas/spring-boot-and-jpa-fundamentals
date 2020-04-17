@@ -25,7 +25,13 @@ public class UserResource {
 
     @GetMapping("/users/{id}")
     public User show(@PathVariable int id) {
-	return this.userService.findOne(id);
+	User user = this.userService.findOne(id);
+	
+	if(user == null) {
+	    throw new UserNotFoundException("id - " + id);
+	}
+	
+	return user;
     }
 
     @PostMapping("/users")
